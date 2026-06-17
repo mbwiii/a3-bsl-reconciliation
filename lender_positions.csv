@@ -1,0 +1,23 @@
+loan_id,deal_name,lender,par_amount,as_of_date,currency,instrument_type
+L-1001,Acme Corp TLB,Pinnacle Asset Mgmt,10000000,2026-06-13,USD,TLB
+L-1001,Acme Corp TLB,Meridian Credit,5000000,2026-06-13,USD,TLB
+L-1001,Acme Corp TLB,Oakline Capital,7000000,2026-06-10,USD,TLB
+L-1002,Beacon Health TLB,Pinnacle Asset Mgmt,8000000,2026-06-13,USD,TLB
+L-1002,Beacon Health TLB,Oakline Capital,12000000,2026-06-13,USD,TLB
+L-1002,Beacon Health TLB,Summit CLO I,5500000,2026-06-13,USD,TLB
+L-1003,Cedar Energy RCF,Meridian Credit,25000000,2026-06-13,USD,RCF
+L-1003,Cedar Energy RCF,Summit CLO I,7500000,2026-06-13,USD,RCF
+L-1004,Delta Logistics TLB,Summit CLO I,15000000,2026-06-12,USD,TLB
+L-1004,Delta Logistics TLB,Oakline Capital,9000000,2026-06-13,USD,TLB
+L-1005,Echo Media TLB,Pinnacle Asset Mgmt,6000000,2026-06-13,USD,TLB
+L-1005,Echo Media TLB,Meridian Credit,4000000,2026-06-11,USD,TLB
+L-1006,Forge Materials TLB,Oakline Capital,11000000,2026-06-13,USD,TLB
+L-1006,Forge Materials TLB,Meridian Credit,3000000,2026-06-13,USD,TLB
+L-1007,Gulfstream Air TLB,Summit CLO I,13500000,2026-06-13,USD,TLB
+L-1007,Gulfstream Air TLB,Pinnacle Asset Mgmt,9500000,2026-06-13,USD,TLB
+L-1009,Iberia Telecom TLB,Meridian Credit,6000000,2026-06-13,EUR,TLB
+L-1010,Britannia Retail RCF,Oakline Capital,5000000,2026-06-13,GBP,RCF
+L-1011,Keystone Auto TLA,Pinnacle Asset Mgmt,10000000,2026-06-13,USD,TLA
+L-1012,Lumina Power LC,Meridian Credit,3000000,2026-06-13,USD,LC
+L-1013,Monarch Shipping LC,Oakline Capital,4500000,2026-06-13,USD,LC
+L-1014,Northgate Pharma LC,Summit CLO I,6000000,2026-06-13,USD,LC
