@@ -4,13 +4,30 @@
 
 In BSL, multiple lenders fund a loan -- across disparate systems. Breaks occur due to lags in data and/or systems, no golden source, manual reconciliations, and too many points of failure. This proof-of-concept reconciles two position books, identifies break types, surfaces the exposure, and gives a decision-maker something they can act on — every query read, pressure-tested, validated, and run by a human.
 
-**Interview line:**
+**How to read this project:**
 
 > *"Act 1 is the structured investigation — analysts should always do this, it's the baseline. Act 2 is where I thought like a product analyst. I used what I know about BSL to reason through what Versana would actually care about — counterparty patterns, instrument risk, currency exposure."*
 
-## Status — SQL validation complete (6/16/2026)
+## Status — SQL validation complete, independently confirmed (6/16/2026 + 6/23/2026)
 
 The master reconciliation query (`master_reconciliation.sql`) was **built independently**, then **run and verified by Matt in DB Browser** — all **6 break types / 8 instances** surfaced, an exact match to `BREAKS_AnswerKey`. **Four Eye control held: no automated process ran the validation logic — Matt governed and ran it.**
+
+Independently confirmed 6/23/2026 via Python diff against the original CSV source files — **8 for 8 match**. Three separate validation methods, one result.
+
+## Validation architecture (how the integrity story holds)
+
+This project has three independent validation layers — each using a different method, different tools, and different hands:
+
+**Layer 1 — SQL clean-room build (6/16/2026)**
+C and Matt built the reconciliation SQL from scratch in DB Browser — no CW involvement in the validation logic. Matt ran the master query himself. 8 break rows surfaced, exact match to the answer key. Four Eye control: the system that generated the data did not validate its own output.
+
+**Layer 2 — Python code diff (6/23/2026)**
+Independent Python script compared the original lender and agent CSVs directly — no SQL, no prior query logic. Result: 8 breaks, identical to the answer key across all 6 break types. Two methods, one truth.
+
+**Layer 3 — Human visual review (6/23/2026)**
+Matt reviewed both position tables row by row, eyes on raw data, no AI in the loop. Confirmed the same breaks independently. Caught a data drift issue between a working Excel copy and the original CSVs — original CSVs confirmed authoritative.
+
+**Why this matters:** The same system that generated the synthetic data and wrote the answer key cannot be the only system that validates them. These three layers ensure the answer key is independently verified — not just internally consistent.
 
 ## The governance story (what this actually demonstrates)
 

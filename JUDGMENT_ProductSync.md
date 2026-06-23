@@ -28,6 +28,6 @@ The reasoning: a position traded mid-cycle can land in one book before the other
 
 Each came from reasoning through an example — timing lag, contract-as-source-of-truth, mid-cycle settlement — so I can defend all three cold. **No BSL expertise claimed.** This is process-and-judgment thinking applied to the domain: seeing the gap behind the break.
 
-## Interview line
+## The through-line
 
 > *"The reconciliation found the breaks. This is what I'd bring to the product team next — three process gaps the data surfaced that any fix has to answer. I built those questions by reasoning through what each break type actually means."*

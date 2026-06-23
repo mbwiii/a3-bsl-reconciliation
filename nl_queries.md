@@ -25,6 +25,6 @@
 | 8 | "What instruments are tied to what breaks?" | break rows `GROUP BY instrument_type` | **TLB** 3 (missing, dup, stale) · **RCF** 3 (amount, missing, currency) · **LC** 2 (missing, amount) · TLA 0 |
 | 9 | "Are Letters of Credit breaking more often than other instrument types?" | break rate `GROUP BY instrument_type` | *(open question — the one I'd bring to the team)* |
 
-**Interview line:** *"Act 1 is the structured investigation — analysts should always do this, it's the baseline. Act 2 is where I thought like a product analyst. I used what I know about BSL to reason through what Versana would actually care about — counterparty patterns, instrument risk, currency exposure."*
+**How to read this project:** *"Act 1 is the structured investigation — analysts should always do this, it's the baseline. Act 2 is where I thought like a product analyst. I used what I know about BSL to reason through what Versana would actually care about — counterparty patterns, instrument risk, currency exposure."*
 
 *Act-1 queries verified live via `run_reconciliation.py`; Act-2 aggregates computed from the data. Validated by Matt in DB Browser — exact match to BREAKS_AnswerKey.*
