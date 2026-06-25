@@ -22,7 +22,7 @@
 | **Amount break (LC)** | L-1014 Northgate Pharma / Summit | $0.5M difference | **High** — new-instrument face value | Confirm LC face value; resolve before settlement |
 | **Missing in agent (LC)** | L-1013 Monarch Shipping / Oakline | $4.5M | **High** — new instrument not booked agent-side | Confirm LC onboarded to the agent's system |
 
-**Instrument-type signal:** Both LC breaks sit on Letters of Credit — an instrument Versana added to its platform in May 2026, and exactly where the two sides' systems aren't aligned yet. Flag to product: **LC reconciliation coverage needs to be in place before LC volume grows.**
+**Instrument-type signal:** Both injected breaks here sit on Letters of Credit — the instrument *type* Versana added to its platform in May 2026, which is exactly why I seeded the higher break rate there. New instruments are typically where reconciliation coverage lags, so in this synthetic set that's where I deliberately put the stress.
 
 ## The call
 
